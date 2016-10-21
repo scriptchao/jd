@@ -1,0 +1,311 @@
+/*top部分*/
+.top {
+  height: 30px;
+  background-color: #f1f1f1 /*淡灰色*/;
+}
+.top .main {
+  width: 1210px;
+  color: #666 /*深灰*/;
+}
+.top .main a {
+  color: #666 /*权重越大优先显示*/;
+}
+.top .main .list {
+  position: relative;
+  float: left;
+  cursor: default /*手势*/;
+  z-index: 10;
+}
+.top .main .list:hover .text {
+  height: 31px;
+  background: #fff;
+  border-right-color: #ddd /*灰*/;
+  border-left-color: #ddd;
+}
+.top .main .list:hover .fixedBox {
+  display: block;
+}
+.top .main .list:hover i {
+  background-position: -11px 0 /*雪碧图纸*/;
+}
+.top .main .text {
+  position: relative;
+  line-height: 30px;
+  padding-left: 9px;
+  padding-right: 9px;
+  z-index: 1;
+  border-right: 1px solid transparent;
+  border-left: 1px solid transparent;
+  height: inherit;
+}
+.top .main .text i {
+  background-image: url("../img/icon.png");
+  display: inline-block;
+  width: 11px;
+  height: 16px;
+  vertical-align: middle;
+  *margin-right: 5px;
+  *margin-top: 2px /*只有IE才能理解*/;
+}
+.top .main .right {
+  float: right;
+}
+.top .main .right li {
+  vertical-align: middle;
+  line-height: 30px;
+  float: left;
+}
+.top .main .right .separator {
+  color: #ddd;
+}
+.top .main .right .normal {
+  padding-right: 9px;
+  padding-left: 9px;
+}
+.top .main .right .normal.normal1 {
+  padding-left: 3px;
+}
+.top .main .right a:hover {
+  color: #c81623;
+}
+.top .main .fixedBox {
+  position: absolute;
+  top: 30px;
+  border: 1px solid #d4d4d4;
+  background: #fff;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  display: none;
+}
+.top .main .fixedBox ul {
+  margin-left: 10px;
+  width: 300px;
+}
+.top .main .fixedBox ul li {
+  float: left;
+  width: 60px;
+  line-height: 26px;
+  margin-top: 4px /*ie7双倍内边距*/;
+}
+.top .main .fixedBox ul li a {
+  padding: 6px 8px;
+}
+.top .main .fixedBox ul li a:hover {
+  background-color: #f4f4f4;
+  color: #c81623;
+}
+.top .main .fixedBox .current {
+  color: #fff;
+  background: #c81623;
+}
+.top .main .fixedBox .current:hover {
+  color: #fff;
+  background: #c81623;
+}
+.top .main .fixedBox.rgt {
+  right: 0;
+}
+.top .main .fixedBox.lef {
+  left: 0;
+}
+.top .main .fixedBox.lef.rgt {
+  background-image: url("../img/jd.png");
+  height: 106px;
+  background-repeat: no-repeat;
+  background-position: 50% 10px;
+  padding-top: 0;
+  padding-bottom: 0;
+  text-align: center;
+  line-height: 172px;
+}
+/*ad部分*/
+.ad.first {
+  height: 80px;
+  background-image: url("../img/ad1.png");
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-color: #0d4ef4;
+}
+.ad .main {
+  margin-right: auto;
+  margin-left: auto;
+  width: 1210px;
+  position: relative;
+}
+.ad .main a {
+  position: absolute;
+  right: 0;
+  top: 5px;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  line-height: 20px;
+  color: #fff;
+  background: #0b46db;
+  cursor: pointer;
+}
+.ad .main a:hover {
+  background: #0d4ef4;
+}
+/*header*/
+.header {
+  width: 1210px;
+  height: 100px;
+}
+.header .logo {
+  background-image: url("../img/logo1.png");
+  width: 274px;
+  height: 62px;
+  float: left;
+  margin-top: 20px;
+  margin-right: 90px;
+}
+.header .searchBar {
+  float: left;
+  width: 538px;
+  *width: 534px;
+  height: 36px;
+  *height: 32px;
+  border: 2px solid #b61d1d;
+  margin-top: 25px;
+}
+.header .searchBar input {
+  width: 450px;
+  height: 32px;
+  padding: 4px;
+  font-size: 14px;
+  font-weight: bold;
+}
+.header .searchBar a {
+  background: #b61d1d;
+  color: #fff;
+  float: right;
+  line-height: 32px;
+  padding: 0 26px;
+  cursor: pointer;
+}
+.header .keywords {
+  float: left;
+  line-height: 28px;
+  color: #666;
+  font-size: 12px;
+}
+.header .keywords a {
+  margin-right: 10px;
+  cursor: pointer;
+}
+.header .keywords a:first-child {
+  color: #c81623;
+}
+.header .keywords a:hover {
+  color: #c81623;
+}
+.header .shopping {
+  float: right;
+  position: relative;
+  margin-top: 25px;
+  margin-right: 60px;
+}
+.header .shopping .text {
+  width: 140px;
+  height: 36px;
+  position: absolute;
+  right: 0 /*父级只有一个点 默认左上角*/;
+  background: #f9f9f9;
+  border: 1px solid #dfdfdf /*有边框IE7可能不支持*/;
+  line-height: 34px;
+  *line-height: 36px;
+  text-align: center;
+  font-size: 12px;
+  color: #666;
+  z-index: 1;
+}
+.header .shopping:hover .text {
+  background: #fff;
+  border-bottom: 1px solid #fff;
+}
+.header .shopping:hover .fixedBox {
+  display: block;
+  float: left;
+}
+.header .shopping>img {
+  position: absolute;
+  right: 15px;
+  top: -5px;
+  z-index: 1;
+}
+.header .shopping a:before {
+  content: url("../img/shop.png");
+  position: relative;
+  top: 5px;
+  left: -4px;
+}
+.header .shopping a:after {
+  content: url("../img/right.png");
+  position: relative;
+  top: 2px;
+  left: 18px;
+}
+.header .shopping a:hover {
+  color: #c81623;
+  cursor: pointer;
+}
+.header .shopping .fixedBox {
+  position: absolute;
+  width: 310px;
+  height: 70px;
+  top: 35px;
+  right: 0;
+  border: 1px solid #dfdfdf;
+  background: #fff;
+  display: none;
+  z-index: 1;
+}
+.header .shopping .fixedBox img {
+  margin-top: 12px;
+  margin-left: 45px;
+}
+.header .shopping .fixedBox em {
+  font-size: 12px;
+  color: #666;
+  position: relative;
+  top: -20px;
+}
+/*menu部分*/
+.menu {
+  border-bottom: 2px solid #ac191a;
+  height: 48px;
+}
+.menu .menu1 {
+  width: 1210px;
+  position: relative;
+}
+.menu .menu1 img {
+  position: absolute;
+  top: -60px;
+  right: -50px;
+  z-index: -1;
+}
+.menu .menu1 .menu-center {
+  height: 46px;
+  line-height: 46px;
+}
+.menu .menu1 .menu-center a {
+  font-size: 16px;
+  color: #333;
+  padding: 0 20px;
+}
+.menu .menu1 .menu-center a:hover {
+  color: #c81623;
+  cursor: pointer;
+}
+.menu .menu1>a {
+  background: #b61d1d;
+  color: #fff;
+  float: left;
+  line-height: 46px;
+  font-size: 16px;
+  cursor: pointer;
+  padding-left: 10px;
+  padding-right: 105px;
+}

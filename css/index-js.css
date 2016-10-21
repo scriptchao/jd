@@ -1,0 +1,40 @@
+.hide {
+  position: absolute;
+  opacity: 0;
+  margin: 12px 0 0 12px;
+}
+.append {
+  float: right;
+  margin-top: 11px;
+  margin-right: 5px;
+}
+.block {
+  display: block;
+}
+.none {
+  display: none;
+}
+.appear {
+  opacity: 0.5;
+  animation: appear 1s ease forwards;
+}
+@-moz-keyframes appear {
+  to {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes appear {
+  to {
+    opacity: 1;
+  }
+}
+@-o-keyframes appear {
+  to {
+    opacity: 1;
+  }
+}
+@keyframes appear {
+  to {
+    opacity: 1;
+  }
+}

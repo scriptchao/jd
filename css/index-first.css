@@ -1,0 +1,126 @@
+/*firstScreen*/
+.firstScreen {
+  width: 1210px;
+}
+.firstScreen .sideBar.size14 {
+  position: relative;
+  z-index: 1;
+}
+.firstScreen ul {
+  border-bottom: 1px solid #c81623;
+  border-left: 1px solid #c81623;
+  position: relative;
+  width: 211px;
+  float: left;
+}
+.firstScreen ul li .hover {
+  position: relative;
+  padding-left: 10px;
+  width: 210px;
+  height: 31px;
+  line-height: 31px;
+  background: #c81623;
+}
+.firstScreen ul li .hover>a {
+  color: #fff;
+  font-weight: 400;
+}
+.firstScreen ul li:hover .hover {
+  background: #fff;
+  cursor: default;
+}
+.firstScreen ul li:hover .hover>a {
+  color: #b61d1d;
+  cursor: pointer;
+}
+/*item-sub*/
+.item-sub {
+  position: absolute;
+  left: 209px;
+  top: 0;
+  width: 1000px;
+  border: 1px solid #b61d1d;
+  border-top: none;
+  background: #fff;
+}
+.item-sub .item1 {
+  margin-left: 20px;
+  margin-top: 26px;
+}
+.item-sub .item1 .list {
+  float: left;
+  margin-right: 10px;
+  font-size: 12px;
+  color: #fff;
+  cursor: pointer;
+}
+.item-sub .item1 .list a {
+  padding: 6px;
+  background: #786e6e;
+}
+.item-sub .item1 .list i {
+  padding: 6px;
+  background: #5c5251;
+}
+.item-sub .item1 .list:hover a {
+  background: #c81619;
+}
+.item-sub .item1 .list:hover i {
+  background: #b1191a;
+}
+.item-sub .item3 {
+  font-size: 12px;
+  color: #626063;
+  margin-top: 20px;
+  float: left;
+}
+.item-sub .item3 dl {
+  position: relative;
+}
+.item-sub .item3 dt {
+  font-weight: bold;
+  right: 542px;
+  position: absolute;
+  line-height: 30px;
+}
+.item-sub .item3 dt:hover {
+  color: #c81623;
+  cursor: pointer;
+}
+.item-sub .item3 dt i {
+  margin-left: 10px;
+}
+.item-sub .item3 dd {
+  left: 105px;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 6px;
+  position: relative;
+  width: 632px;
+  line-height: 30px;
+}
+.item-sub .item3 dd a {
+  padding: 0 5px 0 8px;
+  border-left: 1px solid #eee;
+}
+.item-sub .item3 dd a:hover {
+  color: #c81623;
+  cursor: pointer;
+}
+.item-sub .item2 {
+  position: absolute;
+  width: 170px;
+  right: 20px;
+  top: 20px;
+}
+.item-sub .item2 a {
+  cursor: pointer;
+}
+.item-sub .item4 {
+  float: right;
+  width: 171px;
+  margin-right: 18px;
+  margin-top: 140px;
+}
+.item-sub .item4 a {
+  cursor: pointer;
+}

@@ -1,0 +1,55 @@
+.firstScreen .sideBar-main {
+  position: relative;
+}
+.firstScreen .sideBar-main a {
+  cursor: pointer;
+}
+.firstScreen .sideBar-main .index {
+  cursor: pointer;
+}
+.firstScreen .sideBar-main .article {
+  width: 730px;
+  position: absolute;
+  top: 200px;
+  left: 223px;
+  cursor: pointer;
+}
+.firstScreen .sideBar-main .article i {
+  font-size: 18px;
+  padding: 20px 5px;
+  background: #000;
+  color: #fff;
+  opacity: 0.5;
+}
+.firstScreen .sideBar-main .article i:first-child {
+  float: right;
+}
+.firstScreen .sideBar-main .article i:last-child {
+  float: left;
+}
+.index-all {
+  position: absolute;
+  top: 430px;
+  left: 510px;
+}
+.img-all .article {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.index {
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+  font-size: 14px;
+  border-radius: 50%;
+  background: #3e3e3e;
+  color: #fff;
+  float: left;
+  text-align: center;
+  margin-left: 4px;
+}
+.index-red {
+  background: #b61b1f;
+}

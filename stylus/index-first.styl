@@ -1,0 +1,106 @@
+/*firstScreen*/
+.firstScreen
+    width 1210px
+    .sideBar
+        &.size14
+            position relative
+            z-index 1
+    ul
+        border-bottom 1px solid rgb(200,22,35)
+        border-left 1px solid rgb(200,22,35)
+        position relative
+        width 211px
+        float left
+        li
+            .hover
+                position relative
+                padding-left 10px
+                width 210px
+                height 31px
+                line-height 31px
+                background rgb(200,22,35)
+                &>a
+                    color white
+                    font-weight 400
+            &:hover
+                .hover
+                    background white
+                    cursor default
+                    &>a
+                        color rgb(182,29,29)
+                        cursor pointer
+
+/*item-sub*/
+.item-sub
+    position absolute
+    left 209px
+    top 0
+    width 1000px
+    border 1px solid rgb(182,29,29)
+    border-top none
+    background white
+    .item1
+        margin-left 20px
+        margin-top 26px
+        .list
+            float left
+            margin-right 10px
+            font-size 12px
+            color white
+            cursor pointer
+            a
+                padding 6px
+                background rgb(120,110,110)
+            i
+                padding 6px
+                background rgb(92,82,81)
+            &:hover
+                a
+                    background rgb(200,22,25)
+                i
+                    background rgb(177,25,26)
+    .item3
+        font-size 12px
+        color rgb(98,96,99)
+        margin-top 20px
+        float left
+        dl
+            position relative
+        dt
+            font-weight bold
+            right 542px
+            position absolute
+            line-height 30px
+            &:hover
+                color rgb(200,22,35)
+                cursor pointer
+            i
+                margin-left 10px
+        dd
+            left 105px
+            border-bottom 1px solid rgb(238,238,238)
+            padding-bottom 6px
+            position relative
+            width 632px
+            line-height 30px
+            a
+                padding 0 5px 0 8px
+                border-left 1px solid rgb(238,238,238)
+                &:hover
+                    color rgb(200,22,35)
+                    cursor pointer
+    .item2
+        position absolute
+        width 170px
+        right 20px
+        top 20px
+        a
+            cursor pointer
+    .item4
+        float right
+        width 171px
+        margin-right 18px
+        margin-top 140px
+        a
+            cursor pointer
+

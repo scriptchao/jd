@@ -1,0 +1,265 @@
+/*top部分*/
+.top
+    height 30px
+    background-color rgb(241,241,241)/*淡灰色*/
+    .main
+        width 1210px
+        color rgb(102,102,102)/*深灰*/
+        a
+            color rgb(102,102,102)/*权重越大优先显示*/
+        .list
+            position relative
+            float left
+            cursor default/*手势*/
+            z-index 10
+            &:hover
+                .text
+                    height 31px
+                    background white
+                    border-right-color rgb(221,221,221)/*灰*/
+                    border-left-color rgb(221,221,221)
+                .fixedBox
+                    display block
+                i
+                    background-position -11px 0/*雪碧图纸*/
+
+        .text
+            position relative
+            line-height 30px
+            padding-left 9px
+            padding-right 9px
+            z-index 1
+            border-right 1px solid transparent
+            border-left 1px solid transparent
+            height inherit
+            i
+                background-image url(../img/icon.png)
+                display inline-block
+                width 11px
+                height 16px
+                vertical-align middle
+                *margin-right 5px
+                *margin-top 2px /*只有IE才能理解*/
+        .right
+            float right
+            li
+                vertical-align middle
+                line-height 30px
+                float left
+            .separator
+                color rgb(221,221,221)
+            .normal
+                padding-right 9px
+                padding-left 9px
+                &.normal1
+                    padding-left 3px
+
+            a
+                &:hover
+                    color rgb(200,22,35)
+        .fixedBox
+            position absolute
+            top 30px
+            border 1px solid rgb(212,212,212)
+            background white
+            padding-top 8px
+            padding-bottom 8px
+            display none
+            ul
+                margin-left 10px
+                width 300px
+                li
+                    float left
+                    width 60px
+                    line-height 26px
+                    margin-top 4px/*ie7双倍内边距*/
+                    a
+                        padding 6px 8px
+                        &:hover
+                            background-color rgb(244,244,244)
+                            color rgb(200,22,35)
+            .current
+                color white
+                background rgb(200,22,35)
+                &:hover
+                    color white
+                    background rgb(200,22,35)
+            &.rgt
+                right 0
+            &.lef
+                left 0
+            &.lef
+                &.rgt
+                    background-image: url(../img/jd.png)
+                    height 106px
+                    background-repeat no-repeat
+                    background-position 50% 10px
+                    padding-top 0
+                    padding-bottom 0
+                    text-align center
+                    line-height 172px
+/*ad部分*/
+.ad
+    &.first
+        height 80px
+        background-image url(../img/ad1.png)
+        background-position 50%
+        background-repeat no-repeat
+        background-color rgb(13,78,244)
+    .main
+        margin-right auto
+        margin-left auto
+        width 1210px
+        position relative
+        a
+            position absolute
+            right 0
+            top 5px
+            width 20px
+            height 20px
+            text-align center
+            line-height 20px
+            color white
+            background rgb(11,70,219)
+            cursor pointer
+            &:hover
+                background rgb(13,78,244)
+/*header*/
+.header
+    width 1210px
+    height 100px
+    .logo
+        background-image url(../img/logo1.png)
+        width 274px
+        height 62px
+        float left
+        margin-top 20px
+        margin-right 90px
+    .searchBar
+        float left
+        width 538px
+        *width 534px
+        height 36px
+        *height 32px
+        border 2px solid rgb(182,29,29)
+        margin-top 25px
+        input
+            width 450px
+            height 32px
+            padding 4px
+            font-size 14px
+            font-weight bold
+        a
+            background rgb(182,29,29)
+            color white
+            float right
+            line-height 32px
+            padding 0 26px
+            cursor pointer
+    .keywords
+        float left
+        line-height 28px
+        color rgb(102,102,102)
+        font-size 12px
+        a
+            margin-right 10px
+            cursor pointer
+            &:first-child
+                color rgb(200,22,35)
+            &:hover
+                color rgb(200,22,35)
+    .shopping
+        float right
+        position relative
+        margin-top 25px
+        margin-right 60px
+        .text
+            width 140px
+            height 36px
+            position absolute
+            right 0/*父级只有一个点 默认左上角*/
+            background rgb(249,249,249)
+            border 1px solid rgb(223,223,223)/*有边框IE7可能不支持*/
+            line-height 34px
+            *line-height 36px
+            text-align center
+            font-size 12px
+            color rgb(102,102,102)
+            z-index 1
+        &:hover
+            .text
+                background white
+                border-bottom 1px solid white
+            .fixedBox
+                display block
+                float left
+        &>img
+            position absolute
+            right 15px
+            top -5px
+            z-index 1
+        a
+            &:before
+                content url(../img/shop.png)
+                position relative
+                top 5px
+                left -4px
+            &:after
+                content url(../img/right.png)
+                position relative
+                top 2px
+                left 18px
+            &:hover
+                color rgb(200,22,35)
+                cursor pointer
+        .fixedBox
+            position absolute
+            width 310px
+            height 70px
+            top 35px
+            right 0
+            border 1px solid rgb(223,223,223)
+            background white
+            display none
+            z-index 1
+            img
+                margin-top 12px
+                margin-left 45px
+            em
+                font-size 12px
+                color rgb(102,102,102)
+                position relative
+                top -20px
+/*menu部分*/
+.menu
+    border-bottom 2px solid rgb(172,25,26)
+    height 48px
+    .menu1
+        width 1210px
+        position relative
+        img
+            position absolute
+            top -60px
+            right -50px
+            z-index -1
+        .menu-center
+            height 46px
+            line-height 46px
+            a
+                font-size 16px
+                color rgb(51,51,51)
+                padding 0 20px
+                &:hover
+                    color rgb(200,22,35)
+                    cursor pointer
+        &>a
+            background rgb(182,29,29)
+            color white
+            float left
+            line-height 46px
+            font-size 16px
+            cursor pointer
+            padding-left 10px
+            padding-right 105px
+
+
